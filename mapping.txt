@@ -1,0 +1,816 @@
+cpw.mods.modlauncher.MixinCore.MixinInfoInjector -> OoOo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0O.Oo0Oo0Oo0Oo0Oo0Oo0Oo0:
+# {"fileName":"MixinInfoInjector.java","id":"sourceFile"}
+    17:17:void <init>() -> <init>
+    22:39:org.objectweb.asm.tree.ClassNode getMixinClassNode(org.spongepowered.asm.service.IClassBytecodeProvider,java.lang.String,boolean,int) -> O0o0O0o0O0o0O0o0O0o0O0o0
+net.rain.rainjava.RainJava -> OoOo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0O.o0Oo0Oo0Oo0Oo0Oo0Oo0O:
+# {"fileName":"RainJava.java","id":"sourceFile"}
+    java.lang.String MOD_ID -> O0o0O0o0O0o0O0o0O0o0O0o0
+    org.apache.logging.log4j.Logger LOGGER -> O0o0O0o0O0o0O0o0O0o0O0o0
+    net.rain.rainjava.core.RainJavaCore coreInstance -> O0o0O0o0O0o0O0o0O0o0O0o0
+    45:59:void <init>() -> <init>
+    1064:1069:void addBaitMixinConfig():64:69 -> <init>
+    1064:1069:void <init>():56 -> <init>
+    64:69:void addBaitMixinConfig() -> O0o0O0o0O0o0O0o0O0o0O0o0
+    73:74:void commonSetup(net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    78:85:void clientSetup(net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    90:97:void onServerStarting(net.minecraftforge.event.server.ServerStartingEvent) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    101:101:net.rain.rainjava.core.RainJavaCore getCore() -> O0o0O0o0O0o0O0o0O0o0O0o0
+    35:42:void <clinit>() -> <clinit>
+net.rain.rainjava.core.RainJavaCore -> OoOo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0O.Oo0Oo0Oo0Oo0Oo0Oo0Oo:
+# {"fileName":"RainJavaCore.java","id":"sourceFile"}
+    java.lang.String RAINJAVA_FOLDER -> o0O0o0O0o0O0o0O0o0O0o0O0
+    java.nio.file.Path rootPath -> O0o0O0o0O0o0O0o0O0o0O0o0
+    java.nio.file.Path serverPath -> o0O0o0O0o0O0o0O0o0O0o0O0
+    java.nio.file.Path clientPath -> Oo0oO0oOo0oO0oOo0oO0oOo0
+    java.nio.file.Path startupPath -> oO0oO0oO0oO0oO0oO0oO0oO0
+    java.nio.file.Path assetsPath -> O0Oo0O0Oo0O0Oo0O0Oo0O0Oo
+    java.nio.file.Path dataPath -> o0o0O0o0o0O0o0o0O0o0o0O0
+    java.nio.file.Path coreModPath -> Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0
+    boolean mixinsLoaded -> O0o0O0o0O0o0O0o0O0o0O0o0
+    java.util.Map loaders -> O0o0O0o0O0o0O0o0O0o0O0o0
+    java.util.Map loadedFlags -> o0O0o0O0o0O0o0O0o0O0o0O0
+    36:63:void <init>() -> <init>
+    1069:1089:void initializeFolders():69:89 -> <init>
+    1069:1089:void <init>():54 -> <init>
+    69:89:void initializeFolders() -> o0O0o0O0o0O0o0O0o0O0o0O0
+    95:198:void createExampleFiles() -> Oo0oO0oOo0oO0oOo0oO0oOo0
+    203:237:void loadScripts(net.rain.rainjava.core.ScriptType) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    1241:1244:java.nio.file.Path getScriptPath(net.rain.rainjava.core.ScriptType):241:244 -> O0o0O0o0O0o0O0o0O0o0O0o0
+    1241:1244:void loadScripts(net.rain.rainjava.core.ScriptType):218 -> O0o0O0o0O0o0O0o0O0o0O0o0
+    241:244:java.nio.file.Path getScriptPath(net.rain.rainjava.core.ScriptType) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    252:305:void onAddPackFinders(net.minecraftforge.event.AddPackFindersEvent) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    310:310:java.nio.file.Path getRootPath() -> O0o0O0o0O0o0O0o0O0o0O0o0
+    314:314:java.nio.file.Path getServerPath() -> o0O0o0O0o0O0o0O0o0O0o0O0
+    318:318:java.nio.file.Path getClientPath() -> Oo0oO0oOo0oO0oOo0oO0oOo0
+    322:322:java.nio.file.Path getStartupPath() -> oO0oO0oO0oO0oO0oO0oO0oO0
+    326:326:java.nio.file.Path getAssetsPath() -> O0Oo0O0Oo0O0Oo0O0Oo0O0Oo
+    330:330:java.nio.file.Path getDataPath() -> o0o0O0o0o0O0o0o0O0o0o0O0
+    334:334:net.rain.rainjava.java.JavaScriptLoader getLoader(net.rain.rainjava.core.ScriptType) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    284:298:void lambda$onAddPackFinders$3(java.nio.file.Path,java.util.function.Consumer) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    293:293:net.minecraft.server.packs.PackResources lambda$onAddPackFinders$2(net.minecraft.server.packs.PackResources,java.lang.String) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    261:275:void lambda$onAddPackFinders$1(java.nio.file.Path,java.util.function.Consumer) -> o0O0o0O0o0O0o0O0o0O0o0O0
+    270:270:net.minecraft.server.packs.PackResources lambda$onAddPackFinders$0(net.minecraft.server.packs.PackResources,java.lang.String) -> o0O0o0O0o0O0o0O0o0O0o0O0
+net.rain.rainjava.core.RainJavaCore$1 -> OoOo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0O.Oo0Oo0Oo0Oo0Oo0Oo0Oo0O:
+# {"fileName":"RainJavaCore.java","id":"sourceFile"}
+    int[] $SwitchMap$net$rain$rainjava$core$ScriptType -> O0o0O0o0O0o0O0o0O0o0O0o0
+    241:241:void <clinit>() -> <clinit>
+net.rain.rainjava.core.ScriptType -> OoOo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0O.o0Oo0Oo0Oo0Oo0Oo0Oo0Oo:
+# {"fileName":"ScriptType.java","id":"sourceFile"}
+    net.rain.rainjava.core.ScriptType SERVER -> O0o0O0o0O0o0O0o0O0o0O0o0
+    net.rain.rainjava.core.ScriptType CLIENT -> o0O0o0O0o0O0o0O0o0O0o0O0
+    net.rain.rainjava.core.ScriptType STARTUP -> Oo0oO0oOo0oO0oOo0oO0oOo0
+    java.lang.String name -> Oo0oO0oOo0oO0oOo0oO0oOo0
+    net.rain.rainjava.core.ScriptType[] $VALUES -> O0o0O0o0O0o0O0o0O0o0O0o0
+    7:7:net.rain.rainjava.core.ScriptType[] values() -> values
+    7:7:net.rain.rainjava.core.ScriptType valueOf(java.lang.String) -> valueOf
+    28:30:void <init>(java.lang.String,int,java.lang.String) -> <init>
+    33:33:java.lang.String getName() -> O0o0O0o0O0o0O0o0O0o0O0o0
+    38:38:java.lang.String toString() -> toString
+    7:7:net.rain.rainjava.core.ScriptType[] $values() -> O0o0O0o0O0o0O0o0O0o0O0o0
+    7:24:void <clinit>() -> <clinit>
+    1007:1007:net.rain.rainjava.core.ScriptType[] $values():7:7 -> <clinit>
+    1007:1007:void <clinit>():7 -> <clinit>
+net.rain.rainjava.java.ClassReplacementManager -> OoOo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0O.Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo:
+# {"fileName":"ClassReplacementManager.java","id":"sourceFile"}
+    net.rain.rainjava.java.JavaSourceCompiler compiler -> O0o0O0o0O0o0O0o0O0o0O0o0
+    java.nio.file.Path replaceDirectory -> o0Oo0Oo0Oo0Oo0Oo0Oo0Oo0O
+    java.nio.file.Path replacementOutputPath -> Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo
+    java.util.Map compiledReplacements -> Oo0oO0oOo0oO0oOo0oO0oOo0
+    21:50:void <init>(net.rain.rainjava.java.JavaSourceCompiler,java.nio.file.Path) -> <init>
+    56:93:void processReplacements() -> oO0oO0oO0oO0oO0oO0oO0oO0
+    1116:1139:void compileReplacement(java.nio.file.Path):116:139 -> oO0oO0oO0oO0oO0oO0oO0oO0
+    1116:1139:void processReplacements():82 -> oO0oO0oO0oO0oO0oO0oO0oO0
+    2017:2030:java.nio.file.Path net.rain.rainjava.utils.PathUtils.removeRainJavaPrefix(java.nio.file.Path):17:30 -> oO0oO0oO0oO0oO0oO0oO0oO0
+    2017:2030:void compileReplacement(java.nio.file.Path):120 -> oO0oO0oO0oO0oO0oO0oO0oO0
+    2017:2030:void processReplacements():82 -> oO0oO0oO0oO0oO0oO0oO0oO0
+    2147:2177:void applyReplacements():147:177 -> oO0oO0oO0oO0oO0oO0oO0oO0
+    2147:2177:void processReplacements():87 -> oO0oO0oO0oO0oO0oO0oO0oO0
+    99:108:java.util.List scanJavaFiles() -> O0o0O0o0O0o0O0o0O0o0O0o0
+    116:139:void compileReplacement(java.nio.file.Path) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    3017:3030:java.nio.file.Path net.rain.rainjava.utils.PathUtils.removeRainJavaPrefix(java.nio.file.Path):17:30 -> O0o0O0o0O0o0O0o0O0o0O0o0
+    3017:3030:void compileReplacement(java.nio.file.Path):120 -> O0o0O0o0O0o0O0o0O0o0O0o0
+    147:177:void applyReplacements() -> O0Oo0O0Oo0O0Oo0O0Oo0O0Oo
+    183:183:java.util.Map getCompiledReplacements() -> O0o0O0o0O0o0O0o0O0o0O0o0
+    190:190:boolean hasReplacements() -> O0o0O0o0O0o0O0o0O0o0O0o0
+    197:197:int getReplacementCount() -> O0o0O0o0O0o0O0o0O0o0O0o0
+    204:204:java.nio.file.Path getReplacementOutputPath() -> Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0
+    102:102:boolean lambda$scanJavaFiles$0(java.nio.file.Path) -> O0o0O0o0O0o0O0o0O0o0O0o0
+net.rain.rainjava.java.CompiledClass -> OoOo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0O.o0Oo0Oo0Oo0Oo0Oo0Oo0Oo0:
+# {"fileName":"CompiledClass.java","id":"sourceFile"}
+    java.lang.String className -> oO0oO0oO0oO0oO0oO0oO0oO0
+    byte[] bytecode -> O0o0O0o0O0o0O0o0O0o0O0o0
+    10:13:void <init>(java.lang.String,byte[]) -> <init>
+net.rain.rainjava.java.DynamicClassLoader -> OoOo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0O.Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0:
+# {"fileName":"DynamicClassLoader.java","id":"sourceFile"}
+    java.util.Map classBytes -> oO0oO0oO0oO0oO0oO0oO0oO0
+    10:14:void <init>(java.lang.ClassLoader) -> <init>
+    20:21:void addCompiledClass(java.lang.String,byte[]) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    25:29:java.lang.Class findClass(java.lang.String) -> findClass
+net.rain.rainjava.java.DynamicMixinLoader -> OoOo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0O.o0Oo0Oo0Oo0Oo0Oo0Oo0Oo0O:
+# {"fileName":"DynamicMixinLoader.java","id":"sourceFile"}
+    net.rain.rainjava.java.JavaSourceCompiler compiler -> o0O0o0O0o0O0o0O0o0O0o0O0
+    net.rain.rainjava.java.DynamicClassLoader classLoader -> O0o0O0o0O0o0O0o0O0o0O0o0
+    java.nio.file.Path mixinsDir -> Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0O
+    boolean initialized -> o0O0o0O0o0O0o0O0o0O0o0O0
+    java.lang.Object LOCK -> O0o0O0o0O0o0O0o0O0o0O0o0
+    22:26:void <init>(net.rain.rainjava.java.JavaSourceCompiler,net.rain.rainjava.java.DynamicClassLoader,java.nio.file.Path) -> <init>
+    29:80:void loadDynamicMixins() -> o0o0O0o0o0O0o0o0O0o0o0O0
+    1086:1130:void installBytecodeProviderWrapper():86:130 -> o0o0O0o0o0O0o0o0O0o0o0O0
+    1086:1130:void loadDynamicMixins():55 -> o0o0O0o0o0O0o0o0O0o0o0O0
+    1159:1207:void registerMixinConfig(org.spongepowered.rain.asm.mixin.transformer.MixinProcessor,java.util.Map):159:207 -> o0o0O0o0o0O0o0o0O0o0o0O0
+    1159:1207:void loadDynamicMixins():72 -> o0o0O0o0o0O0o0o0O0o0o0O0
+    1244:1261:void addConfigToProcessor(org.spongepowered.rain.asm.mixin.transformer.MixinProcessor,org.spongepowered.rain.asm.mixin.transformer.MixinConfig):244:261 -> o0o0O0o0o0O0o0o0O0o0o0O0
+    1244:1261:void registerMixinConfig(org.spongepowered.rain.asm.mixin.transformer.MixinProcessor,java.util.Map):199 -> o0o0O0o0o0O0o0o0O0o0o0O0
+    1244:1261:void loadDynamicMixins():72 -> o0o0O0o0o0O0o0o0O0o0o0O0
+    86:130:void installBytecodeProviderWrapper() -> Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0
+    136:152:java.util.Map compileAllMixins() -> o0O0o0O0o0O0o0O0o0O0o0O0
+    159:207:void registerMixinConfig(org.spongepowered.rain.asm.mixin.transformer.MixinProcessor,java.util.Map) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    2244:2261:void addConfigToProcessor(org.spongepowered.rain.asm.mixin.transformer.MixinProcessor,org.spongepowered.rain.asm.mixin.transformer.MixinConfig):244:261 -> O0o0O0o0O0o0O0o0O0o0O0o0
+    2244:2261:void registerMixinConfig(org.spongepowered.rain.asm.mixin.transformer.MixinProcessor,java.util.Map):199 -> O0o0O0o0O0o0O0o0O0o0O0o0
+    213:223:java.util.List scanMixinSources() -> o0O0o0O0o0O0o0O0o0O0o0O0
+    231:236:org.spongepowered.rain.asm.mixin.transformer.ext.Extensions getExtensionsFromProcessor(org.spongepowered.rain.asm.mixin.transformer.MixinProcessor) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    244:261:void addConfigToProcessor(org.spongepowered.rain.asm.mixin.transformer.MixinProcessor,org.spongepowered.rain.asm.mixin.transformer.MixinConfig) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    217:217:boolean lambda$scanMixinSources$1(java.nio.file.Path) -> o0O0o0O0o0O0o0O0o0O0o0O0
+    216:216:boolean lambda$scanMixinSources$0(java.nio.file.Path) -> Oo0oO0oOo0oO0oOo0oO0oOo0
+    19:20:void <clinit>() -> <clinit>
+net.rain.rainjava.java.JavaScriptLoader -> OoOo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0O.Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0O:
+# {"fileName":"JavaScriptLoader.java","id":"sourceFile"}
+    net.rain.rainjava.core.ScriptType scriptType -> oO0oO0oO0oO0oO0oO0oO0oO0
+    net.rain.rainjava.java.JavaSourceCompiler compiler -> Oo0oO0oOo0oO0oOo0oO0oOo0
+    net.rain.rainjava.java.DynamicClassLoader classLoader -> o0O0o0O0o0O0o0O0o0O0o0O0
+    java.util.List loadedClasses -> O0o0O0o0O0o0O0o0O0o0O0o0
+    net.rain.rainjava.java.ClassReplacementManager replacementManager -> O0o0O0o0O0o0O0o0O0o0O0o0
+    net.rain.rainjava.java.transformer.McpToSrgTransformer mcpTransformer -> O0o0O0o0O0o0O0o0O0o0O0o0
+    31:78:void <init>(net.rain.rainjava.core.ScriptType) -> <init>
+    84:93:void processClassReplacements() -> o0Oo0Oo0Oo0Oo0Oo0Oo0Oo0O
+    100:100:void processMixins() -> Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo
+    106:162:void loadJavaScripts(java.nio.file.Path) -> o0O0o0O0o0O0o0O0o0O0o0O0
+    1310:1317:void executeLoadedClasses():310:317 -> o0O0o0O0o0O0o0O0o0O0o0O0
+    1310:1317:void loadJavaScripts(java.nio.file.Path):154 -> o0O0o0O0o0O0o0O0o0O0o0O0
+    169:210:boolean loadJavaFileWithTransform(java.nio.file.Path) -> oO0oO0oO0oO0oO0oO0oO0oO0
+    220:271:java.lang.String extractClassName(java.nio.file.Path,java.lang.String) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    278:303:java.nio.file.Path resolveFilePath(java.nio.file.Path) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    310:317:void executeLoadedClasses() -> Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0O
+    324:344:void executeClass(java.lang.Class) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    350:364:java.lang.reflect.Method findInitMethod(java.lang.Class) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    370:370:java.util.List getLoadedClasses() -> Oo0oO0oOo0oO0oOo0oO0oOo0
+    374:374:boolean isAvailable() -> o0O0o0O0o0O0o0O0o0O0o0O0
+    378:378:net.rain.rainjava.java.ClassReplacementManager getReplacementManager() -> O0o0O0o0O0o0O0o0O0o0O0o0
+    382:382:net.rain.rainjava.java.JavaSourceCompiler getCompiler() -> O0o0O0o0O0o0O0o0O0o0O0o0
+    386:386:net.rain.rainjava.java.DynamicClassLoader getClassLoader() -> O0o0O0o0O0o0O0o0O0o0O0o0
+    390:390:net.rain.rainjava.java.transformer.McpToSrgTransformer getMcpTransformer() -> O0o0O0o0O0o0O0o0O0o0O0o0
+    120:126:boolean lambda$loadJavaScripts$0(java.nio.file.Path) -> O0Oo0O0Oo0O0Oo0O0Oo0O0Oo
+net.rain.rainjava.java.JavaSourceCompiler -> OoOo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0O.o0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo:
+# {"fileName":"JavaSourceCompiler.java","id":"sourceFile"}
+    javax.tools.JavaCompiler compiler -> O0o0O0o0O0o0O0o0O0o0O0o0
+    java.util.List options -> o0O0o0O0o0O0o0O0o0O0o0O0
+    boolean isEclipseCompiler -> Oo0oO0oOo0oO0oOo0oO0oOo0
+    java.lang.String classPath -> O0Oo0O0Oo0O0Oo0O0Oo0O0Oo
+    org.apache.logging.log4j.Logger LOGGER -> o0O0o0O0o0O0o0O0o0O0o0O0
+    28:84:void <init>(javax.tools.JavaCompiler) -> <init>
+    1090:1136:java.lang.String buildClassPath():90:136 -> <init>
+    1090:1136:void <init>(javax.tools.JavaCompiler):71 -> <init>
+    90:136:java.lang.String buildClassPath() -> o0O0o0O0o0O0o0O0o0O0o0O0
+    141:164:void addModuleExports() -> o0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo
+    172:214:void scanAllForgeMods(java.util.Set) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    223:286:java.lang.String extractModFilePath(java.lang.Object,java.lang.String) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    295:344:void scanModsFolder(java.util.Set) -> o0O0o0O0o0O0o0O0o0O0o0O0
+    351:370:void scanLibrariesFolder(java.util.Set) -> Oo0oO0oOo0oO0oOo0oO0oOo0
+    376:407:void scanLibrariesRecursive(java.io.File,java.util.Set,int[]) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    413:479:void findMinecraftJars(java.util.Set) -> oO0oO0oO0oO0oO0oO0oO0oO0
+    486:548:java.lang.String resolveJarPath(java.net.URL) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    552:552:java.lang.String getClassPath() -> Oo0oO0oOo0oO0oOo0oO0oOo0
+    561:591:void validateClasspath(java.util.Set) -> O0Oo0O0Oo0O0Oo0O0Oo0O0Oo
+    597:647:void extractClassPath(java.lang.ClassLoader,java.util.Set) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    654:668:net.rain.rainjava.java.CompiledClass compile(java.nio.file.Path) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    673:676:net.rain.rainjava.java.CompiledClass compileFromString(java.lang.String,java.lang.String) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    686:739:net.rain.rainjava.java.CompiledClass compileFromString(java.lang.String,java.lang.String,java.lang.String) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    747:783:java.lang.String extractClassName(java.lang.String) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    583:583:boolean lambda$validateClasspath$2(java.lang.String) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    579:579:boolean lambda$validateClasspath$1(java.lang.String) -> o0O0o0O0o0O0o0O0o0O0o0O0
+    325:325:boolean lambda$scanModsFolder$0(java.io.File,java.lang.String) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    26:26:void <clinit>() -> <clinit>
+net.rain.rainjava.java.JavaSourceCompiler$CustomFileManager -> OoOo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0O.OOOOoooo0000OOOOoooo0000:
+# {"fileName":"JavaSourceCompiler.java","id":"sourceFile"}
+    java.util.Map outputFiles -> O0Oo0O0Oo0O0Oo0O0Oo0O0Oo
+    javax.tools.StandardJavaFileManager standardManager -> O0o0O0o0O0o0O0o0O0o0O0o0
+    boolean isEclipse -> oO0oO0oO0oO0oO0oO0oO0oO0
+    net.rain.rainjava.java.JavaSourceCompiler this$0 -> oO0oO0oO0oO0oO0oO0oO0oO0
+    902:914:void <init>(net.rain.rainjava.java.JavaSourceCompiler,boolean) -> <init>
+    918:950:byte[] getCompiledClass(java.lang.String) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    958:969:javax.tools.JavaFileObject getJavaFileForOutput(javax.tools.JavaFileManager$Location,java.lang.String,javax.tools.JavaFileObject$Kind,javax.tools.FileObject) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    977:979:javax.tools.JavaFileObject getJavaFileForInput(javax.tools.JavaFileManager$Location,java.lang.String,javax.tools.JavaFileObject$Kind) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    985:985:java.lang.ClassLoader getClassLoader(javax.tools.JavaFileManager$Location) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    992:995:java.lang.Iterable list(javax.tools.JavaFileManager$Location,java.lang.String,java.util.Set,boolean) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    1000:1019:java.lang.String inferBinaryName(javax.tools.JavaFileManager$Location,javax.tools.JavaFileObject) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    1024:1024:boolean isSameFile(javax.tools.FileObject,javax.tools.FileObject) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    1029:1029:boolean handleOption(java.lang.String,java.util.Iterator) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    1034:1034:boolean hasLocation(javax.tools.JavaFileManager$Location) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    1040:1040:javax.tools.FileObject getFileForInput(javax.tools.JavaFileManager$Location,java.lang.String,java.lang.String) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    1046:1046:javax.tools.FileObject getFileForOutput(javax.tools.JavaFileManager$Location,java.lang.String,java.lang.String,javax.tools.FileObject) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    1051:1052:void flush() -> Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo
+    1056:1057:void close() -> o0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0
+    1061:1061:int isSupportedOption(java.lang.String) -> O0o0O0o0O0o0O0o0O0o0O0o0
+net.rain.rainjava.java.JavaSourceCompiler$EclipseCompatibleJavaFileObject -> OoOo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0O.ooo0000OOOOoooo0000OOOO:
+# {"fileName":"JavaSourceCompiler.java","id":"sourceFile"}
+    java.lang.String code -> o0o0O0o0o0O0o0o0O0o0o0O0
+    java.lang.String className -> Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0
+    797:800:void <init>(java.lang.String,java.lang.String) -> <init>
+    1805:1806:java.net.URI createVirtualURI(java.lang.String):805:806 -> <init>
+    1805:1806:void <init>(java.lang.String,java.lang.String):797 -> <init>
+    805:806:java.net.URI createVirtualURI(java.lang.String) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    811:811:java.lang.CharSequence getCharContent(boolean) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    816:816:java.io.InputStream openInputStream() -> O0o0O0o0O0o0O0o0O0o0O0o0
+    821:821:java.io.Reader openReader(boolean) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    827:827:java.lang.String getName() -> O0o0O0o0O0o0O0o0O0o0O0o0
+net.rain.rainjava.java.JavaSourceCompiler$InMemoryJavaFileObject -> OoOo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0O.OOOOoooo0000OOOOoooo:
+# {"fileName":"JavaSourceCompiler.java","id":"sourceFile"}
+    java.lang.String code -> o0Oo0Oo0Oo0Oo0Oo0Oo0Oo0O
+    java.io.ByteArrayOutputStream bytecode -> O0o0O0o0O0o0O0o0O0o0O0o0
+    839:842:void <init>(java.lang.String,java.lang.String) -> <init>
+    845:849:void <init>(java.lang.String,javax.tools.JavaFileObject$Kind) -> <init>
+    853:853:java.lang.CharSequence getCharContent(boolean) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    858:858:java.io.OutputStream openOutputStream() -> O0o0O0o0O0o0O0o0O0o0O0o0
+    862:862:byte[] getBytes() -> O0o0O0o0O0o0O0o0O0o0O0o0
+net.rain.rainjava.java.JavaSourceCompiler$OutputJavaFileObject -> OoOo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0O.OOOO0000ooooOOOO0000oooo:
+# {"fileName":"JavaSourceCompiler.java","id":"sourceFile"}
+    java.io.ByteArrayOutputStream bytecode -> O0o0O0o0O0o0O0o0O0o0O0o0
+    java.lang.String className -> Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo
+    874:877:void <init>(java.lang.String,javax.tools.JavaFileObject$Kind) -> <init>
+    882:883:java.io.OutputStream openOutputStream() -> O0o0O0o0O0o0O0o0O0o0O0o0
+    888:888:java.io.Writer openWriter() -> O0o0O0o0O0o0O0o0O0o0O0o0
+    892:894:byte[] getBytes() -> O0o0O0o0O0o0O0o0O0o0O0o0
+net.rain.rainjava.java.MixinUtils -> OoOo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0O.oO0oO0oO0oO0oO0oO0oO0oOo:
+# {"fileName":"MixinUtils.java","id":"sourceFile"}
+    10:10:void <init>() -> <init>
+    15:18:org.objectweb.asm.tree.ClassNode createClassNode(byte[]) -> O0o0O0o0O0o0O0o0O0o0O0o0
+net.rain.rainjava.java.helper.BytecodeProviderInstaller -> OoOo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0O.OOoo00OOoo00OOoo00OOoo00:
+# {"fileName":"BytecodeProviderWrapper.java","id":"sourceFile"}
+    84:84:void <init>() -> <init>
+    90:134:void install() -> Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0
+net.rain.rainjava.java.helper.BytecodeProviderWrapper -> OoOo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0O.oo00OOoo00OOoo00OOoo00OO:
+# {"fileName":"BytecodeProviderWrapper.java","id":"sourceFile"}
+    org.spongepowered.rain.asm.service.IClassBytecodeProvider delegate -> O0o0O0o0O0o0O0o0O0o0O0o0
+    java.util.Map dynamicMixinBytecode -> o0o0O0o0o0O0o0o0O0o0o0O0
+    19:22:void <init>(org.spongepowered.rain.asm.service.IClassBytecodeProvider) -> <init>
+    28:31:void registerMixin(java.lang.String,byte[]) -> o0O0o0O0o0O0o0O0o0O0o0O0
+    37:38:void clear() -> o0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0O
+    42:42:org.objectweb.asm.tree.ClassNode getClassNode(java.lang.String) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    48:59:org.objectweb.asm.tree.ClassNode getClassNode(java.lang.String,boolean) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    67:72:org.objectweb.asm.tree.ClassNode bytesToClassNode(byte[]) -> o0O0o0O0o0O0o0O0o0O0o0O0
+    17:17:void <clinit>() -> <clinit>
+net.rain.rainjava.java.helper.MixinConfigHelper -> OoOo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0O.OOoo00OOoo00OOoo00OOoo:
+# {"fileName":"MixinConfigHelper.java","id":"sourceFile"}
+    13:13:void <init>() -> <init>
+    21:53:void initializePlugin(org.spongepowered.rain.asm.mixin.transformer.MixinConfig) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    59:70:java.lang.reflect.Field findPluginField(org.spongepowered.rain.asm.mixin.transformer.MixinConfig) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    79:111:org.spongepowered.rain.asm.mixin.transformer.PluginHandle getPluginFromExistingConfig() -> O0o0O0o0O0o0O0o0O0o0O0o0
+    124:165:org.spongepowered.rain.asm.mixin.transformer.PluginHandle createDefaultPlugin(org.spongepowered.rain.asm.mixin.transformer.MixinConfig) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    172:173:void fullyInitializeConfig(org.spongepowered.rain.asm.mixin.transformer.MixinConfig) -> o0O0o0O0o0O0o0O0o0O0o0O0
+    1021:1053:void initializePlugin(org.spongepowered.rain.asm.mixin.transformer.MixinConfig):21:53 -> o0O0o0O0o0O0o0O0o0O0o0O0
+    1021:1053:void fullyInitializeConfig(org.spongepowered.rain.asm.mixin.transformer.MixinConfig):172 -> o0O0o0O0o0O0o0O0o0O0o0O0
+net.rain.rainjava.java.helper.MixinServiceHelper -> OoOo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0O.OOoo00OOoo00OOoo00OOoo00O:
+# {"fileName":"MixinServiceHelper.java","id":"sourceFile"}
+    org.apache.logging.log4j.Logger LOGGER -> Oo0oO0oOo0oO0oOo0oO0oOo0
+    boolean serviceFixed -> O0Oo0O0Oo0O0Oo0O0Oo0O0Oo
+    java.lang.Object LOCK -> o0O0o0O0o0O0o0O0o0O0o0O0
+    14:14:void <init>() -> <init>
+    23:85:boolean fixMixinService() -> Oo0oO0oOo0oO0oOo0oO0oOo0
+    1094:1102:void forceInitializeBytecodeProvider(org.spongepowered.rain.asm.service.IMixinService):94:102 -> Oo0oO0oOo0oO0oOo0oO0oOo0
+    1094:1102:boolean fixMixinService():56 -> Oo0oO0oOo0oO0oOo0oO0oOo0
+    94:102:void forceInitializeBytecodeProvider(org.spongepowered.rain.asm.service.IMixinService) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    109:133:boolean verifyBytecodeProvider(org.spongepowered.rain.asm.service.IMixinService) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    141:188:void fixConfigService(org.spongepowered.rain.asm.mixin.transformer.MixinConfig) -> Oo0oO0oOo0oO0oOo0oO0oOo0
+    195:233:boolean verifyService() -> oO0oO0oO0oO0oO0oO0oO0oO0
+    241:294:void diagnoseService() -> Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0O
+    300:301:void reset() -> o0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo
+    15:17:void <clinit>() -> <clinit>
+net.rain.rainjava.java.helper.ModuleAccessHelper -> OoOo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0O.oo00OOoo00OOoo00OOoo00OOo:
+# {"fileName":"ModuleAccessHelper.java","id":"sourceFile"}
+    java.lang.invoke.MethodHandles$Lookup LOOKUP -> O0o0O0o0O0o0O0o0O0o0O0o0
+    org.apache.logging.log4j.Logger LOGGER -> oO0oO0oO0oO0oO0oO0oO0oO0
+    34:34:void <init>() -> <init>
+    44:56:void forceOpenPackage(java.lang.Module,java.lang.String,java.lang.Module) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    63:73:void addModuleReads(java.lang.Module,java.lang.Module) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    81:127:void fixMixinAccess() -> Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo
+    1063:1073:void addModuleReads(java.lang.Module,java.lang.Module):63:73 -> Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo
+    1063:1073:void fixMixinAccess():101 -> Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo
+    2044:2056:void forceOpenPackage(java.lang.Module,java.lang.String,java.lang.Module):44:56 -> Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo
+    2044:2056:void fixMixinAccess():118 -> Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo
+    35:36:void <clinit>() -> <clinit>
+net.rain.rainjava.java.helper.RuntimeModuleOpener -> OoOo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0O.OOoo00OOoo00OOoo00OOoo0:
+# {"fileName":"RuntimeModuleOpener.java","id":"sourceFile"}
+    org.apache.logging.log4j.Logger LOGGER -> O0Oo0O0Oo0O0Oo0O0Oo0O0Oo
+    boolean initialized -> o0O0o0O0o0O0o0O0o0O0o0O0
+    boolean javaBaseOpened -> o0o0O0o0o0O0o0o0O0o0o0O0
+    java.lang.Object LOCK -> Oo0oO0oOo0oO0oOo0oO0oOo0
+    java.lang.String RAIN_MIXIN_PACKAGE -> Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0O
+    java.lang.String RAIN_TOOLS_PACKAGE -> o0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo
+    12:12:void <init>() -> <init>
+    30:73:void ensureBidirectionalAccess(java.lang.Object,java.lang.Object,java.lang.String,java.lang.Class) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    78:158:void openJavaBaseModule() -> o0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0
+    1226:1262:void openPackageToAllUnnamed(java.lang.Object,java.lang.String,java.lang.Class):226:262 -> o0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0
+    1226:1262:void openJavaBaseModule():126 -> o0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0
+    1269:1291:void exportPackageToAllUnnamed(java.lang.Object,java.lang.String,java.lang.Class):269:291 -> o0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0
+    1269:1291:void openJavaBaseModule():127 -> o0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0
+    1311:1352:void tryUnsafeOpenJavaBase(java.lang.Object,java.lang.String[]):311:352 -> o0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0
+    1311:1352:void openJavaBaseModule():146 -> o0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0
+    166:178:java.lang.Object getMixinModule() -> O0o0O0o0O0o0O0o0O0o0O0o0
+    187:217:java.lang.Object getJavaBaseModule() -> o0O0o0O0o0O0o0O0o0O0o0O0
+    226:262:void openPackageToAllUnnamed(java.lang.Object,java.lang.String,java.lang.Class) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    269:291:void exportPackageToAllUnnamed(java.lang.Object,java.lang.String,java.lang.Class) -> o0O0o0O0o0O0o0O0o0O0o0O0
+    298:302:java.lang.Object getUnnamedModule() -> Oo0oO0oOo0oO0oOo0oO0oOo0
+    311:352:void tryUnsafeOpenJavaBase(java.lang.Object,java.lang.String[]) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    358:464:void openMixinModules() -> Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0
+    2078:2158:void openJavaBaseModule():78:158 -> Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0
+    2078:2158:void openMixinModules():371 -> Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0
+    2226:2262:void openPackageToAllUnnamed(java.lang.Object,java.lang.String,java.lang.Class):226:262 -> Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0
+    2226:2262:void openJavaBaseModule():126 -> Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0
+    2226:2262:void openMixinModules():371 -> Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0
+    2269:2291:void exportPackageToAllUnnamed(java.lang.Object,java.lang.String,java.lang.Class):269:291 -> Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0
+    2269:2291:void openJavaBaseModule():127 -> Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0
+    2269:2291:void openMixinModules():371 -> Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0
+    2311:2352:void tryUnsafeOpenJavaBase(java.lang.Object,java.lang.String[]):311:352 -> Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0
+    2311:2352:void openJavaBaseModule():146 -> Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0
+    2311:2352:void openMixinModules():371 -> Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0
+    2652:2692:void openPackage(java.lang.Object,java.lang.String,java.lang.Class):652:692 -> Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0
+    2652:2692:void openMixinModules():430 -> Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0
+    2699:2738:void exportPackage(java.lang.Object,java.lang.String,java.lang.Class):699:738 -> Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0
+    2699:2738:void openMixinModules():431 -> Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0
+    2745:2774:void tryUnsafeOpen(java.lang.Object,java.lang.String[]):745:774 -> Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0
+    2745:2774:void openMixinModules():447 -> Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0
+    2780:2805:void verifyAccess():780:805 -> Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0
+    2780:2805:void openMixinModules():454 -> Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0
+    472:514:java.lang.Object getECJModule() -> oO0oO0oO0oO0oO0oO0oO0oO0
+    522:525:java.lang.String getModuleName(java.lang.Object) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    535:575:void openPackageToModule(java.lang.Object,java.lang.String,java.lang.Object,java.lang.Class) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    582:619:void exportPackageToModule(java.lang.Object,java.lang.String,java.lang.Object,java.lang.Class) -> o0O0o0O0o0O0o0O0o0O0o0O0
+    626:643:java.lang.Object getModuleOf(java.lang.Class) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    652:692:void openPackage(java.lang.Object,java.lang.String,java.lang.Class) -> Oo0oO0oOo0oO0oOo0oO0oOo0
+    699:738:void exportPackage(java.lang.Object,java.lang.String,java.lang.Class) -> oO0oO0oO0oO0oO0oO0oO0oO0
+    745:774:void tryUnsafeOpen(java.lang.Object,java.lang.String[]) -> o0O0o0O0o0O0o0O0o0O0o0O0
+    780:805:void verifyAccess() -> o0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0O
+    811:813:void reset() -> o0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo
+    53:53:java.util.Set lambda$ensureBidirectionalAccess$0(java.lang.String) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    13:16:void <clinit>() -> <clinit>
+net.rain.rainjava.java.helper.UnsafeClassDefiner -> OoOo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0O.OOoo00OOoo00OOoo00OOoo00OO:
+# {"fileName":"UnsafeClassDefiner.java","id":"sourceFile"}
+    org.apache.logging.log4j.Logger LOGGER -> o0o0O0o0o0O0o0o0O0o0o0O0
+    sun.misc.Unsafe unsafe -> O0o0O0o0O0o0O0o0O0o0O0o0
+    java.lang.invoke.MethodHandle defineClassHandle -> O0o0O0o0O0o0O0o0O0o0O0o0
+    boolean initialized -> o0O0o0O0o0O0o0O0o0O0o0O0
+    14:14:void <init>() -> <init>
+    24:28:boolean initialize() -> O0Oo0O0Oo0O0Oo0O0Oo0O0Oo
+    66:133:java.lang.invoke.MethodHandle createDefineClassHandle() -> O0o0O0o0O0o0O0o0O0o0O0o0
+    141:173:java.lang.Class defineClass(java.lang.ClassLoader,java.lang.String,byte[]) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    181:197:boolean verify() -> o0o0O0o0o0O0o0o0O0o0o0O0
+    1206:1206:byte[] generateTestClass():206:206 -> o0o0O0o0o0O0o0o0O0o0o0O0
+    1206:1206:boolean verify():187 -> o0o0O0o0o0O0o0o0O0o0o0O0
+    206:206:byte[] generateTestClass() -> o0O0o0O0o0O0o0O0o0O0o0O0
+    15:18:void <clinit>() -> <clinit>
+net.rain.rainjava.java.transformer.McpToSrgTransformer -> OoOo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0O.oo00OOoo00OOoo00OOoo00OOoo:
+# {"fileName":"McpToSrgTransformer.java","id":"sourceFile"}
+    org.apache.logging.log4j.Logger LOGGER -> Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0
+    com.github.javaparser.JavaParser javaParser -> O0o0O0o0O0o0O0o0O0o0O0o0
+    33:35:void <init>() -> <init>
+    45:46:java.lang.String transformFile(java.nio.file.Path) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    59:86:java.lang.String transformSource(java.lang.String,java.lang.String) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    30:30:void <clinit>() -> <clinit>
+net.rain.rainjava.java.transformer.McpToSrgTransformer$McpToSrgVisitor -> OoOo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0O.OoOoOoOoOoOoOoOoOoOoOoOo:
+# {"fileName":"McpToSrgTransformer.java","id":"sourceFile"}
+    int transformCount -> O0o0O0o0O0o0O0o0O0o0O0o0
+    93:94:void <init>() -> <init>
+    97:97:int getTransformCount() -> o0O0o0O0o0O0o0O0o0O0o0O0
+    106:129:com.github.javaparser.ast.visitor.Visitable visit(com.github.javaparser.ast.expr.FieldAccessExpr,java.lang.Void) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    138:161:com.github.javaparser.ast.visitor.Visitable visit(com.github.javaparser.ast.expr.MethodCallExpr,java.lang.Void) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    170:200:com.github.javaparser.ast.visitor.Visitable visit(com.github.javaparser.ast.expr.NameExpr,java.lang.Void) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    208:237:java.lang.String resolveClassName(com.github.javaparser.ast.expr.Expression) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    244:295:java.lang.String resolveVariableType(com.github.javaparser.ast.expr.NameExpr) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    302:310:java.lang.String getEnclosingClassName(com.github.javaparser.ast.Node) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    318:335:java.lang.String getFullyQualifiedName(com.github.javaparser.ast.body.ClassOrInterfaceDeclaration) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    343:347:java.lang.String resolveFieldType(com.github.javaparser.ast.expr.FieldAccessExpr) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    356:376:java.lang.String resolveMethodReturnType(com.github.javaparser.ast.expr.MethodCallExpr) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    93:93:com.github.javaparser.ast.visitor.Visitable visit(com.github.javaparser.ast.expr.NameExpr,java.lang.Object) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    93:93:com.github.javaparser.ast.visitor.Visitable visit(com.github.javaparser.ast.expr.MethodCallExpr,java.lang.Object) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    93:93:com.github.javaparser.ast.visitor.Visitable visit(com.github.javaparser.ast.expr.FieldAccessExpr,java.lang.Object) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    93:93:java.lang.Object visit(com.github.javaparser.ast.expr.NameExpr,java.lang.Object) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    93:93:java.lang.Object visit(com.github.javaparser.ast.expr.MethodCallExpr,java.lang.Object) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    93:93:java.lang.Object visit(com.github.javaparser.ast.expr.FieldAccessExpr,java.lang.Object) -> O0o0O0o0O0o0O0o0O0o0O0o0
+net.rain.rainjava.java.util.NetworkUtils -> OoOo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0O.OoOoOoOoOoOoOoOoOoOoOoOoO:
+# {"fileName":"NetworkUtils.java","id":"sourceFile"}
+    net.minecraftforge.network.simple.SimpleChannel CHANNEL -> O0o0O0o0O0o0O0o0O0o0O0o0
+    int packetId -> o0O0o0O0o0O0o0O0o0O0o0O0
+    java.lang.String PROTOCOL_VERSION -> Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo
+    52:52:void <init>() -> <init>
+    62:68:void init(java.lang.String) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    128:159:void register(java.lang.Class,java.util.function.Supplier) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    167:167:net.rain.rainjava.java.util.NetworkUtils$PacketBuilder createPacket() -> O0o0O0o0O0o0O0o0O0o0O0o0
+    305:306:void registerQuickPacket() -> Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0O
+    1128:1159:void register(java.lang.Class,java.util.function.Supplier):128:159 -> Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0O
+    1128:1159:void registerQuickPacket():305 -> Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0O
+    155:157:void lambda$register$8(net.rain.rainjava.java.util.NetworkUtils$SimplePacket,java.util.function.Supplier) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    155:155:void lambda$register$7(net.rain.rainjava.java.util.NetworkUtils$SimplePacket) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    150:152:net.rain.rainjava.java.util.NetworkUtils$SimplePacket lambda$register$6(java.util.function.Supplier,net.minecraft.network.FriendlyByteBuf) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    148:148:void lambda$register$5(net.rain.rainjava.java.util.NetworkUtils$SimplePacket,net.minecraft.network.FriendlyByteBuf) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    136:143:void lambda$register$4(net.rain.rainjava.java.util.NetworkUtils$SimplePacket,java.util.function.Supplier) -> o0O0o0O0o0O0o0O0o0O0o0O0
+    137:141:void lambda$register$3(java.util.function.Supplier,net.rain.rainjava.java.util.NetworkUtils$SimplePacket) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    131:133:net.rain.rainjava.java.util.NetworkUtils$SimplePacket lambda$register$2(java.util.function.Supplier,net.minecraft.network.FriendlyByteBuf) -> o0O0o0O0o0O0o0O0o0O0o0O0
+    129:129:void lambda$register$1(net.rain.rainjava.java.util.NetworkUtils$SimplePacket,net.minecraft.network.FriendlyByteBuf) -> o0O0o0O0o0O0o0O0o0O0o0O0
+    64:64:java.lang.String lambda$init$0() -> oO0oO0oO0oO0oO0oO0oO0oO0
+    55:299:void <clinit>() -> <clinit>
+    1305:1306:void registerQuickPacket():305:306 -> <clinit>
+    1305:1306:void <clinit>():298 -> <clinit>
+    2128:2159:void register(java.lang.Class,java.util.function.Supplier):128:159 -> <clinit>
+    2128:2159:void registerQuickPacket():305 -> <clinit>
+    2128:2159:void <clinit>():298 -> <clinit>
+net.rain.rainjava.java.util.NetworkUtils$PacketBuilder -> OoOo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0O.OoOoOoOoOoOoOoOoOoOoOoOoOo:
+# {"fileName":"NetworkUtils.java","id":"sourceFile"}
+    net.minecraft.network.FriendlyByteBuf tempBuf -> O0o0O0o0O0o0O0o0O0o0O0o0
+    net.rain.rainjava.java.util.NetworkUtils$PacketBuilder$PacketHandler serverHandler -> O0o0O0o0O0o0O0o0O0o0O0o0
+    net.rain.rainjava.java.util.NetworkUtils$PacketBuilder$ClientPacketHandler clientHandler -> O0o0O0o0O0o0O0o0O0o0O0o0
+    175:177:void <init>() -> <init>
+    181:182:net.rain.rainjava.java.util.NetworkUtils$PacketBuilder writeString(java.lang.String) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    186:187:net.rain.rainjava.java.util.NetworkUtils$PacketBuilder writeInt(int) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    191:192:net.rain.rainjava.java.util.NetworkUtils$PacketBuilder writeLong(long) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    196:197:net.rain.rainjava.java.util.NetworkUtils$PacketBuilder writeFloat(float) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    201:202:net.rain.rainjava.java.util.NetworkUtils$PacketBuilder writeDouble(double) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    206:207:net.rain.rainjava.java.util.NetworkUtils$PacketBuilder writeBoolean(boolean) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    211:212:net.rain.rainjava.java.util.NetworkUtils$PacketBuilder writeBytes(byte[]) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    217:218:net.rain.rainjava.java.util.NetworkUtils$PacketBuilder onServerReceive(net.rain.rainjava.java.util.NetworkUtils$PacketBuilder$PacketHandler) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    222:223:net.rain.rainjava.java.util.NetworkUtils$PacketBuilder onClientReceive(net.rain.rainjava.java.util.NetworkUtils$PacketBuilder$ClientPacketHandler) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    230:232:net.rain.rainjava.java.util.NetworkUtils$QuickPacket build() -> O0o0O0o0O0o0O0o0O0o0O0o0
+net.rain.rainjava.java.util.NetworkUtils$PacketBuilder$ClientPacketHandler -> OoOo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0O.Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0:
+# {"fileName":"NetworkUtils.java","id":"sourceFile"}
+    void handle(net.minecraft.network.FriendlyByteBuf) -> O0o0O0o0O0o0O0o0O0o0O0o0
+net.rain.rainjava.java.util.NetworkUtils$PacketBuilder$PacketHandler -> OoOo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0O.o0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0O:
+# {"fileName":"NetworkUtils.java","id":"sourceFile"}
+    void handle(net.minecraft.network.FriendlyByteBuf,net.minecraft.server.level.ServerPlayer) -> O0o0O0o0O0o0O0o0O0o0O0o0
+net.rain.rainjava.java.util.NetworkUtils$QuickPacket -> OoOo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0O.Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo:
+# {"fileName":"NetworkUtils.java","id":"sourceFile"}
+    byte[] data -> o0O0o0O0o0O0o0O0o0O0o0O0
+    net.rain.rainjava.java.util.NetworkUtils$PacketBuilder$PacketHandler serverHandler -> o0O0o0O0o0O0o0O0o0O0o0O0
+    net.rain.rainjava.java.util.NetworkUtils$PacketBuilder$ClientPacketHandler clientHandler -> o0O0o0O0o0O0o0O0o0O0o0O0
+    255:259:void <init>(byte[],net.rain.rainjava.java.util.NetworkUtils$PacketBuilder$PacketHandler,net.rain.rainjava.java.util.NetworkUtils$PacketBuilder$ClientPacketHandler) -> <init>
+    263:264:void <init>() -> <init>
+    268:270:void write(net.minecraft.network.FriendlyByteBuf) -> o0O0o0O0o0O0o0O0o0O0o0O0
+    274:277:void read(net.minecraft.network.FriendlyByteBuf) -> Oo0oO0oOo0oO0oOo0oO0oOo0
+    281:285:void handleServer(net.minecraft.server.level.ServerPlayer) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    289:293:void handleClient() -> o0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo
+net.rain.rainjava.java.util.NetworkUtils$SimplePacket -> OoOo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0O.Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0O:
+# {"fileName":"NetworkUtils.java","id":"sourceFile"}
+    75:75:void <init>() -> <init>
+    void write(net.minecraft.network.FriendlyByteBuf) -> o0O0o0O0o0O0o0O0o0O0o0O0
+    void read(net.minecraft.network.FriendlyByteBuf) -> Oo0oO0oOo0oO0oOo0oO0oOo0
+    90:90:void handleServer(net.minecraft.server.level.ServerPlayer) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    95:95:void handleClient() -> o0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo
+    99:100:void sendToServer() -> Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo
+    103:104:void sendToPlayer(net.minecraft.server.level.ServerPlayer) -> o0O0o0O0o0O0o0O0o0O0o0O0
+    107:108:void sendToAllPlayers() -> o0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0
+    111:116:void sendToNearby(net.minecraft.server.level.ServerPlayer,double) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    119:120:void sendToDimension(net.minecraft.server.level.ServerPlayer) -> Oo0oO0oOo0oO0oOo0oO0oOo0
+    119:119:net.minecraft.resources.ResourceKey lambda$sendToDimension$2(net.minecraft.server.level.ServerPlayer) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    115:115:net.minecraftforge.network.PacketDistributor$TargetPoint lambda$sendToNearby$1(net.minecraftforge.network.PacketDistributor$TargetPoint) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    103:103:net.minecraft.server.level.ServerPlayer lambda$sendToPlayer$0(net.minecraft.server.level.ServerPlayer) -> O0o0O0o0O0o0O0o0O0o0O0o0
+net.rain.rainjava.java.util.RegUtils -> OoOo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0O.o0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo:
+# {"fileName":"RegUtils.java","id":"sourceFile"}
+    java.util.Map MOD_REGISTRIES -> Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0
+    28:28:void <init>() -> <init>
+    39:43:void init(java.lang.String,net.minecraftforge.eventbus.api.IEventBus) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    49:53:net.rain.rainjava.java.util.RegUtils$ModRegistries getRegistries(java.lang.String) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    62:62:net.minecraftforge.registries.DeferredRegister getBlockRegister(java.lang.String) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    69:69:net.minecraftforge.registries.DeferredRegister getItemRegister(java.lang.String) -> o0O0o0O0o0O0o0O0o0O0o0O0
+    76:76:net.minecraftforge.registries.DeferredRegister getEntityRegister(java.lang.String) -> Oo0oO0oOo0oO0oOo0oO0oOo0
+    83:85:net.minecraftforge.registries.DeferredRegister createRegister(java.lang.String,net.minecraftforge.registries.IForgeRegistry,net.minecraftforge.eventbus.api.IEventBus) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    98:98:net.minecraftforge.registries.RegistryObject registerCustom(net.minecraftforge.registries.DeferredRegister,java.lang.String,java.util.function.Supplier) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    108:108:net.minecraftforge.registries.RegistryObject registerCustom(net.minecraftforge.registries.DeferredRegister,java.lang.String,java.lang.Object) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    118:118:net.minecraftforge.registries.RegistryObject registerCustom(net.minecraftforge.registries.DeferredRegister,java.lang.String,java.lang.Class) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    135:135:net.minecraftforge.registries.RegistryObject registerCustom(net.minecraftforge.registries.DeferredRegister,java.lang.String,java.lang.Class,java.lang.Object[]) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    155:155:net.minecraftforge.registries.RegistryObject registerCustomBlock(java.lang.String,java.lang.String,java.util.function.Supplier) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    1062:1062:net.minecraftforge.registries.DeferredRegister getBlockRegister(java.lang.String):62:62 -> O0o0O0o0O0o0O0o0O0o0O0o0
+    1062:1062:net.minecraftforge.registries.RegistryObject registerCustomBlock(java.lang.String,java.lang.String,java.util.function.Supplier):155 -> O0o0O0o0O0o0O0o0O0o0O0o0
+    163:163:net.minecraftforge.registries.RegistryObject registerCustomItem(java.lang.String,java.lang.String,java.util.function.Supplier) -> o0O0o0O0o0O0o0O0o0O0o0O0
+    1069:1069:net.minecraftforge.registries.DeferredRegister getItemRegister(java.lang.String):69:69 -> o0O0o0O0o0O0o0O0o0O0o0O0
+    1069:1069:net.minecraftforge.registries.RegistryObject registerCustomItem(java.lang.String,java.lang.String,java.util.function.Supplier):163 -> o0O0o0O0o0O0o0O0o0O0o0O0
+    171:171:net.minecraftforge.registries.RegistryObject registerCustomEntity(java.lang.String,java.lang.String,java.util.function.Supplier) -> Oo0oO0oOo0oO0oOo0oO0oOo0
+    1076:1076:net.minecraftforge.registries.DeferredRegister getEntityRegister(java.lang.String):76:76 -> Oo0oO0oOo0oO0oOo0oO0oOo0
+    1076:1076:net.minecraftforge.registries.RegistryObject registerCustomEntity(java.lang.String,java.lang.String,java.util.function.Supplier):171 -> Oo0oO0oOo0oO0oOo0oO0oOo0
+    181:206:java.lang.reflect.Constructor findMatchingConstructor(java.lang.Class,java.lang.Object[]) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    1213:1229:boolean isAssignable(java.lang.Class,java.lang.Class):213:229 -> O0o0O0o0O0o0O0o0O0o0O0o0
+    1213:1229:java.lang.reflect.Constructor findMatchingConstructor(java.lang.Class,java.lang.Object[]):195 -> O0o0O0o0O0o0O0o0O0o0O0o0
+    213:229:boolean isAssignable(java.lang.Class,java.lang.Class) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    238:238:net.minecraftforge.registries.RegistryObject block(java.lang.String,java.lang.String,net.minecraft.world.level.block.state.BlockBehaviour$Properties) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    245:245:net.minecraftforge.registries.RegistryObject block(java.lang.String,java.lang.String) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    252:252:net.minecraftforge.registries.RegistryObject block(java.lang.String,java.lang.String,java.util.function.Supplier) -> oO0oO0oO0oO0oO0oO0oO0oO0
+    259:261:net.minecraftforge.registries.RegistryObject blockWithItem(java.lang.String,java.lang.String,net.minecraft.world.level.block.state.BlockBehaviour$Properties) -> o0O0o0O0o0O0o0O0o0O0o0O0
+    268:270:net.minecraftforge.registries.RegistryObject blockWithItem(java.lang.String,java.lang.String) -> o0O0o0O0o0O0o0O0o0O0o0O0
+    1245:1245:net.minecraftforge.registries.RegistryObject block(java.lang.String,java.lang.String):245:245 -> o0O0o0O0o0O0o0O0o0O0o0O0
+    1245:1245:net.minecraftforge.registries.RegistryObject blockWithItem(java.lang.String,java.lang.String):268 -> o0O0o0O0o0O0o0O0o0O0o0O0
+    277:277:net.minecraftforge.registries.RegistryObject item(java.lang.String,java.lang.String,net.minecraft.world.item.Item$Properties) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    284:284:net.minecraftforge.registries.RegistryObject item(java.lang.String,java.lang.String) -> Oo0oO0oOo0oO0oOo0oO0oOo0
+    1277:1277:net.minecraftforge.registries.RegistryObject item(java.lang.String,java.lang.String,net.minecraft.world.item.Item$Properties):277:277 -> Oo0oO0oOo0oO0oOo0oO0oOo0
+    1277:1277:net.minecraftforge.registries.RegistryObject item(java.lang.String,java.lang.String):284 -> Oo0oO0oOo0oO0oOo0oO0oOo0
+    291:291:net.minecraftforge.registries.RegistryObject item(java.lang.String,java.lang.String,java.util.function.Supplier) -> O0Oo0O0Oo0O0Oo0O0Oo0O0Oo
+    298:298:net.minecraftforge.registries.RegistryObject blockItem(java.lang.String,java.lang.String,net.minecraftforge.registries.RegistryObject) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    308:308:net.minecraftforge.registries.RegistryObject entity(java.lang.String,java.lang.String,net.minecraft.world.entity.EntityType$Builder) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    317:317:net.minecraft.world.level.block.state.BlockBehaviour$Properties stone() -> O0o0O0o0O0o0O0o0O0o0O0o0
+    325:325:net.minecraft.world.item.Item$Properties itemProps() -> O0o0O0o0O0o0O0o0O0o0O0o0
+    332:332:net.minecraft.world.item.Item$Properties itemProps(int) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    339:339:net.minecraft.world.level.block.state.BlockBehaviour$Properties copy(net.minecraft.world.level.block.Block) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    346:346:java.lang.String[] getRegisteredMods() -> O0o0O0o0O0o0O0o0O0o0O0o0
+    308:308:net.minecraft.world.entity.EntityType lambda$entity$6(net.minecraft.world.entity.EntityType$Builder,java.lang.String) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    298:298:net.minecraft.world.item.Item lambda$blockItem$5(net.minecraftforge.registries.RegistryObject) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    277:277:net.minecraft.world.item.Item lambda$item$4(net.minecraft.world.item.Item$Properties) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    238:238:net.minecraft.world.level.block.Block lambda$block$3(net.minecraft.world.level.block.state.BlockBehaviour$Properties) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    138:145:java.lang.Object lambda$registerCustom$2(java.lang.Class,java.lang.Object[]) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    2181:2206:java.lang.reflect.Constructor findMatchingConstructor(java.lang.Class,java.lang.Object[]):181:206 -> O0o0O0o0O0o0O0o0O0o0O0o0
+    2181:2206:java.lang.Object lambda$registerCustom$2(java.lang.Class,java.lang.Object[]):138 -> O0o0O0o0O0o0O0o0O0o0O0o0
+    2213:2229:boolean isAssignable(java.lang.Class,java.lang.Class):213:229 -> O0o0O0o0O0o0O0o0O0o0O0o0
+    2213:2229:java.lang.reflect.Constructor findMatchingConstructor(java.lang.Class,java.lang.Object[]):195 -> O0o0O0o0O0o0O0o0O0o0O0o0
+    2213:2229:java.lang.Object lambda$registerCustom$2(java.lang.Class,java.lang.Object[]):138 -> O0o0O0o0O0o0O0o0O0o0O0o0
+    120:122:java.lang.Object lambda$registerCustom$1(java.lang.Class) -> o0O0o0O0o0O0o0O0o0O0o0O0
+    108:108:java.lang.Object lambda$registerCustom$0(java.lang.Object) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    31:31:void <clinit>() -> <clinit>
+net.rain.rainjava.java.util.RegUtils$ModRegistries -> OoOo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0O.Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo:
+# {"fileName":"RegUtils.java","id":"sourceFile"}
+    net.minecraftforge.registries.DeferredRegister blocks -> O0o0O0o0O0o0O0o0O0o0O0o0
+    net.minecraftforge.registries.DeferredRegister items -> o0O0o0O0o0O0o0O0o0O0o0O0
+    net.minecraftforge.registries.DeferredRegister entities -> Oo0oO0oOo0oO0oOo0oO0oOo0
+    java.util.Map customRegisters -> o0Oo0Oo0Oo0Oo0Oo0Oo0Oo0O
+    357:367:void <init>(java.lang.String,net.minecraftforge.eventbus.api.IEventBus) -> <init>
+net.rain.rainjava.java.utils.MC -> OoOo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0O.o0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0:
+# {"fileName":"MinecraftHelper.java","id":"sourceFile"}
+    733:733:void <init>() -> <init>
+net.rain.rainjava.java.utils.MinecraftHelper -> OoOo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0O.Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0:
+# {"fileName":"MinecraftHelper.java","id":"sourceFile"}
+    org.apache.logging.log4j.Logger LOGGER -> o0Oo0Oo0Oo0Oo0Oo0Oo0Oo0O
+    java.util.Map fieldCache -> Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo
+    java.util.Map methodCache -> Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0O
+    java.util.Map fieldMappings -> o0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo
+    java.util.Map methodMappings -> Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo
+    java.lang.String MAPPING_RESOURCE_PATH -> o0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0
+    boolean mappingLoaded -> Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0
+    java.nio.file.Path mappingFilePath -> o0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo
+    24:24:void <init>() -> <init>
+    43:109:void loadMappingsFromResource() -> Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0
+    116:141:java.io.InputStream getResourceAsStream(java.lang.String) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    148:151:boolean resourceExists(java.lang.String) -> Oo0oO0oOo0oO0oOo0oO0oOo0
+    1116:1141:java.io.InputStream getResourceAsStream(java.lang.String):116:141 -> Oo0oO0oOo0oO0oOo0oO0oOo0
+    1116:1141:boolean resourceExists(java.lang.String):148 -> Oo0oO0oOo0oO0oOo0oO0oOo0
+    159:182:void findMappingFile() -> o0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0O
+    189:268:void parseMappingFile(java.io.BufferedReader) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    275:327:java.lang.String findSrgFieldName(java.lang.String,java.lang.String) -> o0O0o0O0o0O0o0O0o0O0o0O0
+    334:397:java.lang.String findSrgMethodName(java.lang.String,java.lang.String) -> Oo0oO0oOo0oO0oOo0oO0oOo0
+    406:467:java.lang.Object getStaticField(java.lang.Class,java.lang.String) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    475:507:void setStaticField(java.lang.Class,java.lang.String,java.lang.Object) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    514:547:java.lang.Object getField(java.lang.Object,java.lang.String) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    555:590:void setField(java.lang.Object,java.lang.String,java.lang.Object) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    597:632:java.lang.Object invokeStaticMethod(java.lang.Class,java.lang.String,java.lang.Object[]) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    641:678:java.lang.Object invokeMethod(java.lang.Object,java.lang.String,java.lang.Object[]) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    683:689:java.lang.Class[] getParameterTypes(java.lang.Object[]) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    696:701:void clearCache() -> Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0O
+    709:712:java.lang.Object getStaticField(java.lang.String,java.lang.String) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    722:725:java.lang.Object invokeStaticMethod(java.lang.String,java.lang.String,java.lang.Object[]) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    647:672:java.lang.reflect.Method lambda$invokeMethod$5(java.lang.Object[],java.lang.Class,java.lang.String,java.lang.String) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    600:626:java.lang.reflect.Method lambda$invokeStaticMethod$4(java.lang.Object[],java.lang.Class,java.lang.String,java.lang.String) -> o0O0o0O0o0O0o0O0o0O0o0O0
+    562:582:java.lang.reflect.Field lambda$setField$3(java.lang.Class,java.lang.String,java.lang.String) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    521:541:java.lang.reflect.Field lambda$getField$2(java.lang.Class,java.lang.String,java.lang.String) -> o0O0o0O0o0O0o0O0o0O0o0O0
+    479:499:java.lang.reflect.Field lambda$setStaticField$1(java.lang.Class,java.lang.String,java.lang.String) -> Oo0oO0oOo0oO0oOo0oO0oOo0
+    411:461:java.lang.reflect.Field lambda$getStaticField$0(java.lang.Class,java.lang.String,java.lang.String) -> oO0oO0oO0oO0oO0oO0oO0oO0
+    25:36:void <clinit>() -> <clinit>
+net.rain.rainjava.mixin.MixinBootstrap -> OoOo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0O.o0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0O:
+# {"fileName":"MixinBootstrap.java","id":"sourceFile"}
+    18:18:void <init>() -> <init>
+    23:34:void onMinecraftInit(net.minecraft.client.main.GameConfig,org.spongepowered.asm.mixin.injection.callback.CallbackInfo) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    1037:1051:void initializeMixinService():37:51 -> O0o0O0o0O0o0O0o0O0o0O0o0
+    1037:1051:void onMinecraftInit(net.minecraft.client.main.GameConfig,org.spongepowered.asm.mixin.injection.callback.CallbackInfo):23 -> O0o0O0o0O0o0O0o0O0o0O0o0
+    1054:1056:void initializeMixinTransformer():54:56 -> O0o0O0o0O0o0O0o0O0o0O0o0
+    1054:1056:void onMinecraftInit(net.minecraft.client.main.GameConfig,org.spongepowered.asm.mixin.injection.callback.CallbackInfo):25 -> O0o0O0o0O0o0O0o0O0o0O0o0
+    37:51:void initializeMixinService() -> o0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo
+    54:56:void initializeMixinTransformer() -> Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo
+net.rain.rainjava.mixin.MixinDebugHelper -> OoOo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0O.Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0O:
+# {"fileName":"MixinDebugHelper.java","id":"sourceFile"}
+    13:13:void <init>() -> <init>
+    19:137:boolean validateMixinSetup(java.nio.file.Path,java.nio.file.Path,org.apache.logging.log4j.Logger) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    145:196:void showFixSuggestions(java.nio.file.Path,java.nio.file.Path,org.apache.logging.log4j.Logger) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    169:182:void lambda$showFixSuggestions$5(java.nio.file.Path,org.apache.logging.log4j.Logger,java.lang.String,java.nio.file.Path) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    167:167:boolean lambda$showFixSuggestions$4(java.nio.file.Path) -> o0o0O0o0o0O0o0o0O0o0o0O0
+    47:47:void lambda$validateMixinSetup$3(org.apache.logging.log4j.Logger,java.lang.String) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    43:43:void lambda$validateMixinSetup$2(java.util.List,com.google.gson.JsonElement) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    40:40:void lambda$validateMixinSetup$1(java.util.List,com.google.gson.JsonElement) -> o0O0o0O0o0O0o0O0o0O0o0O0
+    37:37:void lambda$validateMixinSetup$0(java.util.List,com.google.gson.JsonElement) -> Oo0oO0oOo0oO0oOo0oO0oOo0
+net.rain.rainjava.mixin.MixinDiagnosticTool -> OoOo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0O.o0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo:
+# {"fileName":"MixinDiagnosticTool.java","id":"sourceFile"}
+    13:13:void <init>() -> <init>
+    16:67:void diagnose(java.nio.file.Path,org.apache.logging.log4j.Logger) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    1091:1117:void analyzeConfigFile(java.nio.file.Path,org.apache.logging.log4j.Logger):91:117 -> O0o0O0o0O0o0O0o0O0o0O0o0
+    1091:1117:void diagnose(java.nio.file.Path,org.apache.logging.log4j.Logger):37 -> O0o0O0o0O0o0O0o0O0o0O0o0
+    1284:1342:void giveRecommendations(java.nio.file.Path,org.apache.logging.log4j.Logger):284:342 -> O0o0O0o0O0o0O0o0O0o0O0o0
+    1284:1342:void diagnose(java.nio.file.Path,org.apache.logging.log4j.Logger):62 -> O0o0O0o0O0o0O0o0O0o0O0o0
+    70:87:void checkPath(java.nio.file.Path,java.lang.String,org.apache.logging.log4j.Logger) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    91:117:void analyzeConfigFile(java.nio.file.Path,org.apache.logging.log4j.Logger) -> o0O0o0O0o0O0o0O0o0O0o0O0
+    121:145:void checkClassFiles(java.nio.file.Path,org.apache.logging.log4j.Logger) -> Oo0oO0oOo0oO0oOo0oO0oOo0
+    149:215:void analyzeJarFile(java.nio.file.Path,org.apache.logging.log4j.Logger) -> oO0oO0oO0oO0oO0oO0oO0oO0
+    218:243:void checkClasspath(org.apache.logging.log4j.Logger) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    246:281:void testConfigAccess(org.apache.logging.log4j.Logger) -> o0O0o0O0o0O0o0O0o0O0o0O0
+    284:342:void giveRecommendations(java.nio.file.Path,org.apache.logging.log4j.Logger) -> O0Oo0O0Oo0O0Oo0O0Oo0O0Oo
+    334:334:void lambda$giveRecommendations$4(org.apache.logging.log4j.Logger,java.lang.String) -> o0O0o0O0o0O0o0O0o0O0o0O0
+    331:331:void lambda$giveRecommendations$3(org.apache.logging.log4j.Logger,java.lang.String) -> Oo0oO0oOo0oO0oOo0oO0oOo0
+    204:204:void lambda$analyzeJarFile$2(org.apache.logging.log4j.Logger,java.lang.String) -> oO0oO0oO0oO0oO0oO0oO0oO0
+    163:164:void lambda$analyzeJarFile$1(org.apache.logging.log4j.Logger,java.lang.Object,java.lang.Object) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    123:123:boolean lambda$checkClassFiles$0(java.nio.file.Path) -> Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0
+net.rain.rainjava.mixin.MixinJarBuilder -> OoOo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0O.Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo:
+# {"fileName":"MixinJarBuilder.java","id":"sourceFile"}
+    12:12:void <init>() -> <init>
+    15:93:void buildMixinJar(java.nio.file.Path,java.nio.file.Path,java.nio.file.Path,org.apache.logging.log4j.Logger) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    1119:1132:java.util.jar.Manifest createManifest():119:132 -> O0o0O0o0O0o0O0o0O0o0O0o0
+    1119:1132:void buildMixinJar(java.nio.file.Path,java.nio.file.Path,java.nio.file.Path,org.apache.logging.log4j.Logger):49 -> O0o0O0o0O0o0O0o0O0o0O0o0
+    1190:1305:void verifyJarContents(java.nio.file.Path,java.lang.String,org.apache.logging.log4j.Logger):190:305 -> O0o0O0o0O0o0O0o0O0o0O0o0
+    1190:1305:void buildMixinJar(java.nio.file.Path,java.nio.file.Path,java.nio.file.Path,org.apache.logging.log4j.Logger):92 -> O0o0O0o0O0o0O0o0O0o0O0o0
+    100:112:java.lang.String extractPackageFromConfig(java.nio.file.Path,org.apache.logging.log4j.Logger) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    119:132:java.util.jar.Manifest createManifest() -> O0o0O0o0O0o0O0o0O0o0O0o0
+    141:183:net.rain.rainjava.mixin.MixinJarBuilder$ClassFileResult addClassFiles(java.util.jar.JarOutputStream,java.nio.file.Path,java.nio.file.Path,java.lang.String,org.apache.logging.log4j.Logger) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    190:305:void verifyJarContents(java.nio.file.Path,java.lang.String,org.apache.logging.log4j.Logger) -> o0O0o0O0o0O0o0O0o0O0o0O0
+    248:248:void lambda$verifyJarContents$2(java.util.List,com.google.gson.JsonElement) -> oO0oO0oO0oO0oO0oO0oO0oO0
+    244:244:void lambda$verifyJarContents$1(java.util.List,com.google.gson.JsonElement) -> O0Oo0O0Oo0O0Oo0O0Oo0O0Oo
+    240:240:void lambda$verifyJarContents$0(java.util.List,com.google.gson.JsonElement) -> o0o0O0o0o0O0o0o0O0o0o0O0
+net.rain.rainjava.mixin.MixinJarBuilder$ClassFileResult -> OoOo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0O.o0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0:
+# {"fileName":"MixinJarBuilder.java","id":"sourceFile"}
+    int count -> Oo0oO0oOo0oO0oOo0oO0oOo0
+    int totalSize -> oO0oO0oO0oO0oO0oO0oO0oO0
+    314:317:void <init>(int,int) -> <init>
+net.rain.rainjava.mixin.MixinManager -> OoOo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0O.Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0:
+# {"fileName":"MixinManager.java","id":"sourceFile"}
+    org.apache.logging.log4j.Logger LOGGER -> Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo
+    com.google.gson.Gson GSON -> O0o0O0o0O0o0O0o0O0o0O0o0
+    java.lang.String MIXIN_PACKAGE -> Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0
+    java.lang.String DYNAMIC_MIXIN_CONFIG -> o0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0O
+    java.lang.String REFMAP_NAME -> Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0O
+    java.lang.String COMPILE_STATE_FILE -> o0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo
+    java.nio.file.Path mixinSourceDir -> Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo
+    java.nio.file.Path mixinOutputDir -> o0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0
+    java.nio.file.Path mixinConfigDir -> Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0
+    java.nio.file.Path mixinConfigFile -> o0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0O
+    java.nio.file.Path refmapFile -> Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0O
+    java.nio.file.Path compileStateFile -> o0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo
+    java.nio.file.Path mappingFile -> Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo
+    java.util.Map discoveredMixins -> o0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0
+    net.rain.rainjava.mixin.refmap.RefMapGenerator refMapGenerator -> O0o0O0o0O0o0O0o0O0o0O0o0
+    boolean mixinsCompiled -> o0Oo0Oo0Oo0Oo0Oo0Oo0Oo0O
+    38:67:void <init>(java.nio.file.Path) -> <init>
+    73:135:boolean needsRecompile() -> Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0
+    139:166:java.util.Map scanCurrentFiles() -> Oo0oO0oOo0oO0oOo0oO0oOo0
+    170:184:net.rain.rainjava.mixin.MixinManager$CompileState loadCompileState() -> O0o0O0o0O0o0O0o0O0o0O0o0
+    190:205:void saveCompileState() -> o0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0
+    209:232:void scanMixinSources() -> Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0
+    239:274:void analyzeMixinFile(java.nio.file.Path) -> Oo0oO0oOo0oO0oOo0oO0oOo0
+    1320:1332:java.lang.String extractClassName(java.lang.String):320:332 -> Oo0oO0oOo0oO0oOo0oO0oOo0
+    1320:1332:void analyzeMixinFile(java.nio.file.Path):246 -> Oo0oO0oOo0oO0oOo0oO0oOo0
+    2281:2316:java.lang.String extractTargetClassFromSource(java.lang.String):281:316 -> Oo0oO0oOo0oO0oOo0oO0oOo0
+    2281:2316:void analyzeMixinFile(java.nio.file.Path):253 -> Oo0oO0oOo0oO0oOo0oO0oOo0
+    2336:2354:net.rain.rainjava.mixin.MixinManager$Side determineSide(java.nio.file.Path,java.lang.String):336:354 -> Oo0oO0oOo0oO0oOo0oO0oOo0
+    2336:2354:void analyzeMixinFile(java.nio.file.Path):259 -> Oo0oO0oOo0oO0oOo0oO0oOo0
+    281:316:java.lang.String extractTargetClassFromSource(java.lang.String) -> o0O0o0O0o0O0o0O0o0O0o0O0
+    320:332:java.lang.String extractClassName(java.lang.String) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    336:354:net.rain.rainjava.mixin.MixinManager$Side determineSide(java.nio.file.Path,java.lang.String) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    359:412:void compileMixins(net.rain.rainjava.java.JavaSourceCompiler) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    416:450:void generateRefMap() -> o0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0O
+    454:522:void generateMixinConfig() -> Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0O
+    2526:2537:void cleanupConfigFiles():526:537 -> Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0O
+    2526:2537:void generateMixinConfig():456 -> Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0O
+    526:537:void cleanupConfigFiles() -> o0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo
+    540:553:void showRestartMessage() -> Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo
+    556:621:void validateConfiguration() -> o0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0
+    624:647:void runFullWorkflow(net.rain.rainjava.java.JavaSourceCompiler) -> o0O0o0O0o0O0o0O0o0O0o0O0
+    3190:3205:void saveCompileState():190:205 -> o0O0o0O0o0O0o0O0o0O0o0O0
+    3190:3205:void runFullWorkflow(net.rain.rainjava.java.JavaSourceCompiler):643 -> o0O0o0O0o0O0o0O0o0O0o0O0
+    674:674:java.nio.file.Path getMixinSourceDir() -> o0Oo0Oo0Oo0Oo0Oo0Oo0Oo0O
+    675:675:java.nio.file.Path getMixinOutputDir() -> Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo
+    676:676:java.nio.file.Path getMixinConfigFile() -> Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0O
+    677:677:java.nio.file.Path getRefmapFile() -> o0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo
+    678:678:boolean hasMixinsCompiled() -> o0Oo0Oo0Oo0Oo0Oo0Oo0Oo0O
+    679:679:int getMixinCount() -> Oo0oO0oOo0oO0oOo0oO0oOo0
+    595:595:boolean lambda$validateConfiguration$5(java.nio.file.Path) -> o0Oo0Oo0Oo0Oo0Oo0Oo0Oo0O
+    378:384:void lambda$compileMixins$4(java.nio.file.Path) -> oO0oO0oO0oO0oO0oO0oO0oO0
+    229:230:void lambda$scanMixinSources$3(java.lang.String,net.rain.rainjava.mixin.MixinManager$MixinInfo) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    218:218:boolean lambda$scanMixinSources$2(java.nio.file.Path) -> Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo
+    150:161:void lambda$scanCurrentFiles$1(java.util.Map,java.nio.file.Path) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    147:147:boolean lambda$scanCurrentFiles$0(java.nio.file.Path) -> Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0O
+    22:23:void <clinit>() -> <clinit>
+net.rain.rainjava.mixin.MixinManager$1 -> OoOo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0O.o0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0O:
+# {"fileName":"MixinManager.java","id":"sourceFile"}
+    int[] $SwitchMap$net$rain$rainjava$mixin$MixinManager$Side -> o0O0o0O0o0O0o0O0o0O0o0O0
+    469:469:void <clinit>() -> <clinit>
+net.rain.rainjava.mixin.MixinManager$CompileState -> OoOo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0O.Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0O:
+# {"fileName":"MixinManager.java","id":"sourceFile"}
+    long compileTime -> O0o0O0o0O0o0O0o0O0o0O0o0
+    java.util.Map files -> Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0
+    650:650:void <init>() -> <init>
+net.rain.rainjava.mixin.MixinManager$FileSnapshot -> OoOo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0O.o0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo:
+# {"fileName":"MixinManager.java","id":"sourceFile"}
+    java.lang.String path -> Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo
+    long lastModified -> o0O0o0O0o0O0o0O0o0O0o0O0
+    long size -> Oo0oO0oOo0oO0oOo0oO0oOo0
+    655:655:void <init>() -> <init>
+net.rain.rainjava.mixin.MixinManager$MixinInfo -> OoOo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0O.Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo:
+# {"fileName":"MixinManager.java","id":"sourceFile"}
+    java.nio.file.Path sourceFile -> o0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0
+    java.lang.String className -> oO0oO0oO0oO0oO0oO0oO0oO0
+    java.lang.String fullClassName -> o0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0
+    java.lang.String targetClass -> Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0
+    net.rain.rainjava.mixin.MixinManager$Side side -> O0o0O0o0O0o0O0o0O0o0O0o0
+    661:661:void <init>() -> <init>
+net.rain.rainjava.mixin.MixinManager$Side -> OoOo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0O.o0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0:
+# {"fileName":"MixinManager.java","id":"sourceFile"}
+    net.rain.rainjava.mixin.MixinManager$Side COMMON -> o0O0o0O0o0O0o0O0o0O0o0O0
+    net.rain.rainjava.mixin.MixinManager$Side CLIENT -> Oo0oO0oOo0oO0oOo0oO0oOo0
+    net.rain.rainjava.mixin.MixinManager$Side SERVER -> oO0oO0oO0oO0oO0oO0oO0oO0
+    net.rain.rainjava.mixin.MixinManager$Side[] $VALUES -> O0o0O0o0O0o0O0o0O0o0O0o0
+    669:669:net.rain.rainjava.mixin.MixinManager$Side[] values() -> values
+    669:669:net.rain.rainjava.mixin.MixinManager$Side valueOf(java.lang.String) -> valueOf
+    669:669:void <init>(java.lang.String,int) -> <init>
+    669:669:net.rain.rainjava.mixin.MixinManager$Side[] $values() -> O0o0O0o0O0o0O0o0O0o0O0o0
+    669:670:void <clinit>() -> <clinit>
+    1669:1669:net.rain.rainjava.mixin.MixinManager$Side[] $values():669:669 -> <clinit>
+    1669:1669:void <clinit>():669 -> <clinit>
+net.rain.rainjava.mixin.RainMixinConnector -> OoOo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0O.Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0:
+# {"fileName":"RainMixinConnector.java","id":"sourceFile"}
+    10:10:void <init>() -> <init>
+    13:16:void connect() -> Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0
+net.rain.rainjava.mixin.refmap.RefMapGenerator -> OoOo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0O.o0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0O:
+# {"fileName":"RefMapGenerator.java","id":"sourceFile"}
+    com.google.gson.Gson GSON -> o0O0o0O0o0O0o0O0o0O0o0O0
+    org.apache.logging.log4j.Logger logger -> Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0O
+    java.util.Map classMap -> o0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0O
+    java.util.Map methodMap -> Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0O
+    java.util.Map fieldMap -> o0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo
+    java.util.Map mixinMappings -> Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo
+    java.nio.file.Path mappingFilePath -> o0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo
+    boolean mappingLoaded -> Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0
+    java.lang.String[] DEFAULT_MAPPING_PATHS -> O0o0O0o0O0o0O0o0O0o0O0o0
+    java.lang.String[] DEFAULT_RESOURCE_PATHS -> o0O0o0O0o0O0o0O0o0O0o0O0
+    26:53:void <init>(org.apache.logging.log4j.Logger) -> <init>
+    56:70:void loadMappings(java.nio.file.Path) -> O0Oo0O0Oo0O0Oo0O0Oo0O0Oo
+    1073:1092:void loadMappingsFromResource():73:92 -> O0Oo0O0Oo0O0Oo0O0Oo0O0Oo
+    1073:1092:void loadMappings(java.nio.file.Path):61 -> O0Oo0O0Oo0O0Oo0O0Oo0O0Oo
+    1133:1146:java.io.InputStream getResourceAsStream(java.lang.String):133:146 -> O0Oo0O0Oo0O0Oo0O0Oo0O0Oo
+    1133:1146:void loadMappingsFromResource():76 -> O0Oo0O0Oo0O0Oo0O0Oo0O0Oo
+    1133:1146:void loadMappings(java.nio.file.Path):61 -> O0Oo0O0Oo0O0Oo0O0Oo0O0Oo
+    2114:2130:void findAndLoadMappings():114:130 -> O0Oo0O0Oo0O0Oo0O0Oo0O0Oo
+    2114:2130:void loadMappings(java.nio.file.Path):65 -> O0Oo0O0Oo0O0Oo0O0Oo0O0Oo
+    73:92:void loadMappingsFromResource() -> Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0
+    2133:2146:java.io.InputStream getResourceAsStream(java.lang.String):133:146 -> Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0
+    2133:2146:void loadMappingsFromResource():76 -> Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0
+    95:111:void loadMappingsFromFile(java.nio.file.Path) -> o0o0O0o0o0O0o0o0O0o0o0O0
+    114:130:void findAndLoadMappings() -> o0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0O
+    133:146:java.io.InputStream getResourceAsStream(java.lang.String) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    150:191:void parseTSRG2(java.io.BufferedReader) -> o0O0o0O0o0O0o0O0o0O0o0O0
+    194:218:void parseMemberMapping(java.lang.String,java.lang.String,java.lang.String) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    221:221:java.lang.String convertToInternalName(java.lang.String) -> Oo0oO0oOo0oO0oOo0oO0oOo0
+    225:228:java.lang.String convertToJvmType(java.lang.String) -> oO0oO0oO0oO0oO0oO0oO0oO0
+    235:274:void analyzeMixinWithSource(java.lang.String,java.nio.file.Path,java.nio.file.Path,java.lang.String) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    281:312:int analyzeMixinFieldsFromSource(java.lang.String,org.objectweb.asm.tree.ClassNode,java.lang.String,java.util.Map) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    2414:2416:java.lang.String findFieldMapping(java.lang.String,java.lang.String):414:416 -> O0o0O0o0O0o0O0o0O0o0O0o0
+    2414:2416:int analyzeMixinFieldsFromSource(java.lang.String,org.objectweb.asm.tree.ClassNode,java.lang.String,java.util.Map):294 -> O0o0O0o0O0o0O0o0O0o0O0o0
+    320:357:int analyzeMixinMethodsFromSource(java.lang.String,org.objectweb.asm.tree.ClassNode,java.lang.String,java.util.Map) -> o0O0o0O0o0O0o0O0o0O0o0O0
+    3365:3404:boolean parseMethodReference(java.lang.String,java.lang.String,java.util.Map):365:404 -> o0O0o0O0o0O0o0O0o0O0o0O0
+    3365:3404:int analyzeMixinMethodsFromSource(java.lang.String,org.objectweb.asm.tree.ClassNode,java.lang.String,java.util.Map):330 -> o0O0o0O0o0O0o0O0o0O0o0O0
+    365:404:boolean parseMethodReference(java.lang.String,java.lang.String,java.util.Map) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    408:410:java.lang.String findMethodMapping(java.lang.String,java.lang.String,java.lang.String) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    414:416:java.lang.String findFieldMapping(java.lang.String,java.lang.String) -> oO0oO0oO0oO0oO0oO0oO0oO0
+    423:491:void generateRefMap(java.nio.file.Path,java.lang.String) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    494:501:java.util.Map getStatistics() -> oO0oO0oO0oO0oO0oO0oO0oO0
+    505:505:boolean isMappingLoaded() -> Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo
+    509:509:java.nio.file.Path getMappingFilePath() -> Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo
+    513:519:void clear() -> o0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0O
+    522:524:void reloadMappings(java.nio.file.Path) -> Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0
+    124:124:boolean lambda$findAndLoadMappings$0(java.nio.file.Path) -> o0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo
+    22:44:void <clinit>() -> <clinit>
+net.rain.rainjava.resources.RainJavaResourcePack -> OoOo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0O.Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0O:
+# {"fileName":"RainJavaResourcePack.java","id":"sourceFile"}
+    java.nio.file.Path rootPath -> Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0
+    net.minecraft.server.packs.PackType packType -> O0o0O0o0O0o0O0o0O0o0O0o0
+    java.util.Set namespaces -> O0o0O0o0O0o0O0o0O0o0O0o0
+    29:36:void <init>(java.nio.file.Path,net.minecraft.server.packs.PackType) -> <init>
+    1042:1059:void scanNamespaces():42:59 -> <init>
+    1042:1059:void <init>(java.nio.file.Path,net.minecraft.server.packs.PackType):35 -> <init>
+    42:59:void scanNamespaces() -> Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0O
+    67:92:net.minecraft.server.packs.resources.IoSupplier m_8017_(java.lang.String[]) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    102:115:net.minecraft.server.packs.resources.IoSupplier m_214146_(net.minecraft.server.packs.PackType,net.minecraft.resources.ResourceLocation) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    124:148:void m_8031_(net.minecraft.server.packs.PackType,java.lang.String,java.lang.String,net.minecraft.server.packs.PackResources$ResourceOutput) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    155:158:java.util.Set m_5698_(net.minecraft.server.packs.PackType) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    168:178:java.lang.Object m_5550_(net.minecraft.server.packs.metadata.MetadataSectionSerializer) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    186:186:java.lang.String m_5542_() -> O0Oo0O0Oo0O0Oo0O0Oo0O0Oo
+    195:195:void close() -> o0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0
+    136:144:void lambda$listResources$7(java.nio.file.Path,java.lang.String,java.lang.String,net.minecraft.server.packs.PackResources$ResourceOutput,java.nio.file.Path) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    140:140:java.io.InputStream lambda$listResources$6(java.nio.file.Path) -> O0o0O0o0O0o0O0o0O0o0O0o0
+    134:134:boolean lambda$listResources$5(java.nio.file.Path) -> Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo
+    112:112:java.io.InputStream lambda$getResource$4(java.nio.file.Path) -> o0O0o0O0o0O0o0O0o0O0o0O0
+    89:89:java.io.InputStream lambda$getRootResource$3(java.lang.String) -> o0O0o0O0o0O0o0O0o0O0o0O0
+    76:76:java.io.InputStream lambda$getRootResource$2(java.nio.file.Path) -> Oo0oO0oOo0oO0oOo0oO0oOo0
+    48:48:java.lang.String lambda$scanNamespaces$1(java.nio.file.Path) -> o0O0o0O0o0O0o0O0o0O0o0O0
+    47:47:boolean lambda$scanNamespaces$0(java.nio.file.Path) -> o0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0
+net.rain.rainjava.utils.PathUtils -> OoOo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0O.o0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo:
+# {"fileName":"PathUtils.java","id":"sourceFile"}
+    8:8:void <init>() -> <init>
+    17:30:java.nio.file.Path removeRainJavaPrefix(java.nio.file.Path) -> o0O0o0O0o0O0o0O0o0O0o0O0
+    41:50:java.nio.file.Path removePathPrefix(java.nio.file.Path,java.lang.String) -> O0o0O0o0O0o0O0o0O0o0O0o0

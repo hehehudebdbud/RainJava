@@ -1,0 +1,63 @@
+-injars /storage/emulated/0/ModdingProject/RainJava/proguard/../build/libs/rain_java-1.0.7.jar
+-outjars /storage/emulated/0/ModdingProject/RainJava/proguard/../build/obfuscated/rain_java-1.0.7-visual-obf.jar
+
+-libraryjars /data/data/com.termux/files/usr/lib/jvm/java-17-openjdk/jmods/java.base.jmod(!**.jar;!module-info.class)
+
+-dontskipnonpubliclibraryclassmembers
+-dontshrink
+-optimizations !code/simplification/arithmetic,!code/simplification/cast,!field/*,!class/merging/*,!method/propagation/*,!code/removal/advanced,!code/removal/simple,!code/allocation/variable,method/inlining/*
+-optimizationpasses 10
+-allowaccessmodification
+-mergeinterfacesaggressively
+-printmapping /storage/emulated/0/ModdingProject/RainJava/proguard/mapping.txt
+-obfuscationdictionary /storage/emulated/0/ModdingProject/RainJava/proguard/obfuscation-dictionary.txt
+-classobfuscationdictionary /storage/emulated/0/ModdingProject/RainJava/proguard/class-dictionary.txt
+-packageobfuscationdictionary /storage/emulated/0/ModdingProject/RainJava/proguard/package-dictionary.txt
+-overloadaggressively
+-useuniqueclassmembernames
+-dontusemixedcaseclassnames
+-flattenpackagehierarchy OOoo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0O
+-repackageclasses OoOo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0Oo0O
+-keepattributes SourceFile,LineNumberTable,*Annotation*
+-renamesourcefileattribute SourceFile
+-adaptclassstrings
+-adaptresourcefilenames **.properties,**.xml
+-adaptresourcefilecontents **.properties,**.xml
+-dontpreverify
+-verbose
+-dontnote
+-dontwarn
+-ignorewarnings
+-printconfiguration /storage/emulated/0/ModdingProject/RainJava/proguard/used-configuration.txt
+
+
+
+# ================================================
+# 关键修改：移除全大写保护，强制混淆所有字段
+# ================================================
+# ❌ 删除以下保留规则（这会阻止static final字段被混淆）：
+# -keepclassmembers class * {
+#     static final ** *;
+# }
+# ✅ 改为只保留真正必要的静态final字段（如serialVersionUID）
+-keepclassmembers,allowshrinking class * {
+    static final long serialVersionUID;
+    static final java.io.ObjectStreamField[] serialPersistentFields;
+}
+
+# ================================================
+# 额外激进选项
+# ================================================
+# 混淆枚举（如果有的话）- 保留必要方法但混淆字段名
+-keepclassmembers enum  * {
+    public static **[] values();
+    public static ** valueOf(java.lang.String);
+}
+
+# 混淆序列化（如果有的话）
+-keepclassmembers class * extends java.io.Serializable {
+    private void writeObject(java.io.ObjectOutputStream);
+    private void readObject(java.io.ObjectInputStream);
+    java.lang.Object writeReplace();
+    java.lang.Object readResolve();
+}

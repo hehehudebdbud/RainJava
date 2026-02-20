@@ -1,0 +1,64 @@
+// rainjava-agent/build.gradle
+
+plugins {
+    id 'java'
+}
+
+group = 'org.spongepowered.asm.mixin'
+version = '1.0.0'
+
+sourceCompatibility = 8
+targetCompatibility = 8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.ow2.asm:asm:9.5'
+    implementation 'org.ow2.asm:asm-tree:9.5'
+    implementation 'org.apache.logging.log4j:log4j-api:2.19.0'
+}
+
+jar {
+    manifest {
+        attributes([
+                "Specification-Title"     : "rain-agent",
+                "Specification-Vendor"    : "rain111",
+                "Specification-Version"   : "1.0",
+                "Implementation-Title"    : project.name,
+                "Implementation-Version"  : project.jar.archiveVersion,
+                "Implementation-Vendor"   : "rain111",
+                "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
+
+        ])
+        attributes([
+                "Main-Class"             : "net.rain.agent.RainMain",
+                "Premain-Class"          : "net.rain.agent.RainMixinPreAgent",
+                "Agent-Class"            : "net.rain.agent.RainMixinMainAgent",
+                "Can-Redefine-Classes"   : "true",
+                "Can-Retransform-Classes": "true",
+        ])
+    }
+    
+    // 打包所有依赖到一个 fat jar
+    from {
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    } {
+        exclude 'META-INF/*.SF'
+        exclude 'META-INF/*.DSA'
+        exclude 'META-INF/*.RSA'
+    }
+    
+    from(sourceSets.main.output) {
+        include '**/MixinInfoInjector.class'
+    }
+    from('src/main/resources') {
+        include 'META-INF/class/MixinInfoInjector.class'
+    }
+    
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+}
+
+// 确保构建输出文件名固定
+archivesBaseName = 'rainmixin-agent'

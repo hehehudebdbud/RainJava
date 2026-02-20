@@ -1,0 +1,29 @@
+task diagnoseCompilation {
+    doLast {
+        println "=== 编译诊断 ==="
+        
+        // 检查源文件
+        println "源文件位置:"
+        fileTree('src/main/java').include('**/RainJavaReplacementService.java').each { file ->
+            println "  - ${file.path}"
+            println "    存在: ${file.exists()}"
+            println "    大小: ${file.length()} bytes"
+        }
+        
+        // 检查编译输出
+        println "\n编译输出位置:"
+        def classFile = file('build/classes/java/main/net/rain/rainjava/transformer/RainJavaReplacementService.class')
+        println "  - ${classFile.path}"
+        println "    存在: ${classFile.exists()}"
+        if (classFile.exists()) {
+            println "    大小: ${classFile.length()} bytes"
+            println "    修改时间: ${new Date(classFile.lastModified())}"
+        }
+        
+        // 检查jar包内容
+        println "\nJAR包内容:"
+        tasks.jar.doFirst {
+            println "  JAR任务配置完成"
+        }
+    }
+}

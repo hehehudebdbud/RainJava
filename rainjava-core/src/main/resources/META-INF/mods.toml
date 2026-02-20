@@ -1,0 +1,9 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="arr"
+[[mods]]
+modId="rain_java_core"
+version="1.0.0"
+displayName="RainJava"
+authors="rain"
+description='''null'''
